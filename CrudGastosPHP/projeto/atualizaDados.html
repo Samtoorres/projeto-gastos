@@ -32,12 +32,13 @@
             <div class="container">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <form class="formulario" method="POST" action="atualizaDados.php">
-                        <h2 class="form-heading text-center">Atualizar Dados de Contato</h2>
+                        <h2 class="form-heading text-center">Atualizar Dados da Divída</h2>
+                        <label for="">ID:</label>
                         <input type="text" class="form-control" name="id" placeholder="Digite o Id do Contato: *" required="" />
-                        <input type="text" class="form-control" name="nome" placeholder="Digite o novo nome:"
-                               />
-                        <input type="text" class="form-control" name="numero" placeholder="Digite o novo numero:"
-                               />
+                        <label for="">Nome:</label>
+                        <input type="text" class="form-control" name="nome" placeholder="Digite o novo nome:"/>
+                        <label for="">Valor:</label>
+                        <input type="text" class="form-control" name="numero" placeholder="Digite o novo valor:"/>
                         <button class="btn btn-lg btn-primary btn-block">Salvar Alterações</button>
                         <a href="acesso.php"><button type="button" class="btn btn-lg btn-danger btn-block" value="Cancelar" onclick="redirecionamento();">Voltar</button></a>
                     </form>
