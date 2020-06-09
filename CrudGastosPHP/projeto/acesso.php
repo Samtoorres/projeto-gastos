@@ -10,7 +10,8 @@
     $senha_BD="";
     $base="phpprojeto2";
     
-    $conn = new mysqli($local, $usuario_BD, $senha_BD,$base);
+    $conn = 
+    new mysqli($local, $usuario_BD, $senha_BD,$base);
     //verificação de login e senha estão corretos
     $tenta_achar = "SELECT * FROM usuario WHERE email='$usuario' AND senha='$senha'" ;
     $resultado = $conn->query($tenta_achar);
@@ -27,4 +28,5 @@
                 window.location.href = 'index.html';
             </script>";
       }
+    
 ?>
