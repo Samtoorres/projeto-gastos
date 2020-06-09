@@ -7,7 +7,7 @@ $numero = $_POST['numero'];
 $nome_servidor = "localhost";
 $nome_usuario = "root";
 $senha = "";
-$banco = "phpprojeto";
+$banco = "phpprojetov2";
 // Criar conexão
 $conecta = new mysqli($nome_servidor, $nome_usuario, $senha, $banco);
 
@@ -20,7 +20,7 @@ if (mysqli_num_rows($sql) > 0) {
     if ($conecta->query($sql) === TRUE) {
         echo "<script> 
                 alert('Dados atualizados com sucesso!');
-                window.location.href = 'acesso.php';
+                window.location.href = 'acesso.html';
             </script>";
     }
 } else {

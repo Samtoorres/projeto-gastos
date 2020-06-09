@@ -7,7 +7,7 @@
     $nome_servidor = "localhost";
     $nome_usuario = "root";
     $senha = "";
-    $nome_banco = "phpprojeto2";
+    $nome_banco = "phpprojetov2";
 
   // Criar conexão
   $conecta = new mysqli($nome_servidor, $nome_usuario, $senha, $nome_banco);

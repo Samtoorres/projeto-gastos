@@ -3,7 +3,7 @@
 $nome_servidor = "localhost";
 $nome_usuario = "root";
 $senha = "";
-$nome_banco = "phpprojeto";
+$nome_banco = "phpprojetov2";
 
 $conectar = new mysqli($nome_servidor, $nome_usuario, $senha,$nome_banco);
 $buscar = mysqli_query($conectar,"SELECT * FROM numerot")or die(mysql_error);
