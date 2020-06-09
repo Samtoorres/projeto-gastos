@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atualizar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../bootstrap-4.5.0-dist/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap-4.5.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap-4.5.0-dist/css/style.css">
+        <link rel="shortcut icon" href="bootstrap/img/favicon.ico" sizes="16x16">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>
+        <script>
+
+            swal.fire({
+                title: 'Consulte o Id do Contato em Listar Contatos!',
+                text: "É necessário informar o Id do contato para atualizar os dados!!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Listar Contatos',
+                cancelButtonText: 'Já sei o Id!'
+            }).then((result) => {
+                if (result.value) {
+                    window.location.href = 'listar.php';
+                }
+            })
+        </script>
+        <div class="wrapper">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <form class="formulario" method="POST" action="atualizaDados.php">
+                        <h2 class="form-heading text-center">Atualizar Dados de Contato</h2>
+                        <input type="text" class="form-control" name="id" placeholder="Digite o Id do Contato: *" required="" />
+                        <input type="text" class="form-control" name="nome" placeholder="Digite o novo nome:"
+                               />
+                        <input type="text" class="form-control" name="numero" placeholder="Digite o novo numero:"
+                               />
+                        <button class="btn btn-lg btn-primary btn-block">Salvar Alterações</button>
+                        <a href="acesso.php"><button type="button" class="btn btn-lg btn-danger btn-block" value="Cancelar" onclick="redirecionamento();">Voltar</button></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+        <script src="bootstrap/js/javascriptsistema.js"></script>
+    </body>
+</html>

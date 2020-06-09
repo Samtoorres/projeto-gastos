@@ -1,0 +1,86 @@
+body{
+    background: #b3b3b3;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper{
+    margin: 80px 80px 80px;
+}
+
+.formulario{
+    width: 380px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding:15px 40px 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.formulario .form-heading, .formulario .checkbox{
+    margin-bottom:20px;
+}
+
+.formulario input[type="text"], .formulario input[type="password"]{
+    margin-bottom: 20px;
+}
+
+.formulario .form-control{
+    padding: 10px;
+}
+
+.formulario button{
+   margin-top:20px;
+}
+
+.formulario a:hover{
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+/* Pagina Cadastro Usuario */
+
+.User{
+    background: #b3b3b3;
+    background-image: url("../img/imagemfundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.wrapperuser{
+    margin: 60px 80px 80px;
+}
+
+.formulariocadastro{
+    width: 380px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding:15px 40px 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+#labsobre{
+    margin-bottom: 0;
+}
+
+.User .row{
+    margin-top: 18px;
+}
+
+.User button{
+    margin-top: 25px;
+}
+
+.formulariocadastro a{
+    text-decoration: none;
+
+}
+
+    
