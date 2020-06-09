@@ -6,7 +6,7 @@ $senhas = $_GET['senha'];
 $nome_servidor = "localhost";
 $nome_usuario = "root";
 $senha = "";
-$nome_banco = "phpprojeto";
+$nome_banco = "phpprojetov2";
 
 // Criar conexão
 $conn = new mysqli($nome_servidor, $nome_usuario, $senha,$nome_banco);

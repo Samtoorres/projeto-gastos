@@ -8,7 +8,7 @@
     $local="localhost";
     $usuario_BD="root";
     $senha_BD="";
-    $base="phpprojeto2";
+    $base="phpprojetov2";
     
     $conn = new mysqli($local, $usuario_BD, $senha_BD,$base);
     //verificação de login e senha estão corretos
