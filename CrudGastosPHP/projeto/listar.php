@@ -6,7 +6,7 @@ $senha = "";
 $nome_banco = "phpprojetov2";
 
 $conectar = new mysqli($nome_servidor, $nome_usuario, $senha,$nome_banco);
-$buscar = mysqli_query($conectar,"SELECT * FROM numerot")or die(mysql_error);
+$buscar = mysqli_query($conectar,"SELECT * FROM gastos")or die(mysql_error);
 
 $conectar->close();
 ?>
@@ -42,7 +42,7 @@ $conectar->close();
                                 <tr>
                                     <td><?php echo $dado["id"] ?></td>
                                     <td><?php echo $dado["nome"] ?></td>
-                                    <td><?php echo $dado["numero"] ?></td>
+                                    <td><?php echo $dado["valor"] ?></td>
                                 </tr>
                                 <?php }?>
                         

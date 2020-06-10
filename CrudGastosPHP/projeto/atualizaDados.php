@@ -2,7 +2,7 @@
 
 $id = $_POST['id'];
 $nome = $_POST['nome'];
-$numero = $_POST['numero'];
+$valor= $_POST['valor'];
 
 $nome_servidor = "localhost";
 $nome_usuario = "root";
@@ -12,11 +12,11 @@ $banco = "phpprojetov2";
 $conecta = new mysqli($nome_servidor, $nome_usuario, $senha, $banco);
 
 //Pesquisa
-$sql = mysqli_query($conecta, "SELECT * FROM numerot WHERE id = '$id'");
+$sql = mysqli_query($conecta, "SELECT * FROM gastos WHERE id = '$id'");
 if (mysqli_num_rows($sql) > 0) {
 
     //Atualiza
-    $sql = "UPDATE numerot SET nome='$nome', numero='$numero' WHERE id='$id'";
+    $sql = "UPDATE gastos SET nome='$nome', valor='$valor' WHERE id='$id'";
     if ($conecta->query($sql) === TRUE) {
         echo "<script> 
                 alert('Dados atualizados com sucesso!');
@@ -29,8 +29,6 @@ if (mysqli_num_rows($sql) > 0) {
                 window.location.href = 'atualizaDados.html';
             </script>" . $conecta->error;
 }
-
-
 
 $conecta->close();
 ?>

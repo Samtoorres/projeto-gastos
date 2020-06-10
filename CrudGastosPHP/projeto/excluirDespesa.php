@@ -9,13 +9,9 @@
 
     // Criar conexão
     $conecta = new mysqli($nome_servidor, $nome_usuario, $senha, $banco);
-    // Verificar Conexão
-    if ($conecta->connect_error) {
-        die("Conexão falhou: " . $conecta->connect_error . "<br>");
-    }
     
     // apagar registro
-    $sql = "DELETE FROM numerot WHERE id ='$id'";
+    $sql = "DELETE FROM gastos WHERE id ='$id'";
     $result = mysqli_query($conecta, $sql);
 
     if (mysqli_affected_rows($conecta)) {

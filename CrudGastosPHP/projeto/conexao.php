@@ -1,6 +1,6 @@
  <?php
 
-$usuario = $_GET['usuario'];
+$email = $_GET['usuario'];
 $senhas = $_GET['senha'];
 
 $nome_servidor = "localhost";
@@ -12,10 +12,10 @@ $nome_banco = "phpprojetov2";
 $conn = new mysqli($nome_servidor, $nome_usuario, $senha,$nome_banco);
 
 
-    $tenta_achar = "SELECT * FROM usuario WHERE usuario='$usuario' AND senha='$senhas'" ;
+    $tenta_achar = "SELECT * FROM usuario WHERE email='$email' AND senha='$senhas'" ;
     $resultado = $conn->query($tenta_achar);
     if ($resultado->num_rows > 0) {
-        $_SESSION['usuario'] = $usuario;
+        $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senhas;
         header('location:acesso.html');//redireciona para a página de acesso');
     }

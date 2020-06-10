@@ -1,7 +1,7 @@
 <?php
 
 $nome = $_POST['name'];
-$numero = $_POST['valorG'];
+$valor = $_POST['valorG'];
 
 $nome_servidor = "localhost";
 $nome_usuario = "root";
@@ -10,8 +10,8 @@ $nome_banco = "phpprojetov2";
 
 $conn = new mysqli($nome_servidor, $nome_usuario, $senha,$nome_banco);
 
-$result_usuario = "INSERT INTO numerot(nome, numero)
-VALUES ('$nome', '$numero')";
+$result_usuario = "INSERT INTO gastos(nome,valor)
+VALUES ('$nome', '$valor')";
 if ($conn->query($result_usuario) === TRUE) {
     echo "<script>
                 alert('cadastrado com sucesso');
