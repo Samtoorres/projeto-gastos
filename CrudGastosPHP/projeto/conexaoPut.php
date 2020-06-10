@@ -15,7 +15,7 @@ VALUES ('$nome', '$valor')";
 if ($conn->query($result_usuario) === TRUE) {
     echo "<script>
                 alert('cadastrado com sucesso');
-                window.location.href = 'putNumero.html';
+                window.location.href = 'putValor.html';
               </script>";
 }else {
     echo "Erro: " . $result_usuario . "<br>" . $conn->error . "<br>";
