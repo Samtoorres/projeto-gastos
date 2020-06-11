@@ -1,9 +1,14 @@
+html{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
 body{
     background: #b3b3b3;
     background-image: url(../img/imagemGatos.PNG);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100vh;   
 }
 
 .wrapper{
@@ -11,18 +16,14 @@ body{
 }
 
 h2{
-
     color:#ffffff
-
 }
 
 small{
-
     color : #ffffff;
 }
 
 label{
-
    color: #ffffff;
 }
 
@@ -36,8 +37,7 @@ td{
     background-color:black;
     padding:15px 40px 50px;
     border: 1px solid #e5e5e5;
-    border-radius: 10px;
-   
+    border-radius: 10px;  
 }
 
 .formulario .form-heading, .formulario .checkbox{
@@ -61,7 +61,6 @@ td{
     text-decoration: none;
 }
 
-
 /* Pagina Cadastro Usuario */
 
 .User{
@@ -70,7 +69,6 @@ td{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
 .wrapperuser{
@@ -102,6 +100,5 @@ td{
 
 .formulariocadastro a{
     text-decoration: none;
-
 }
 
