@@ -1,11 +1,11 @@
 <?php
 
-$nome_servidor = "localhost";
-$nome_usuario = "root";
-$senha = "";
-$nome_banco = "phpprojetov2";
+$host_name = "sql10.freesqldatabase.com";
+$db_usuario = "sql10347628";
+$db_senha = "WakNl2MEWT";
+$db_name = "sql10347628";
 
-$conectar = new mysqli($nome_servidor, $nome_usuario, $senha,$nome_banco);
+$conectar = mysqli_connect($host_name,$db_usuario,$db_senha,$db_name);
 
 $buscar = mysqli_query($conectar,"SELECT SUM(valor) AS Soma FROM gastos");
 
@@ -44,13 +44,13 @@ $conectar->close();
                             <?php }?>
                         </tbody>
                         </table>
-                        <a href="../projeto/acesso.html"><button type="button" class="btn btn-lg btn-danger btn-block" value="Cancelar" onclick="redirecionamento();">Voltar</button></a>
+                        <a href="../acesso.html"><button type="button" class="btn btn-lg btn-danger btn-block" value="Cancelar" onclick="redirecionamento();">Voltar</button></a>
                     </form>
 	            </div>
             </div>
         </div>
         <script src="../bootstrap-4.5.0-dist/js/jquery-3.4.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+        <script src="../https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
         <script src="../bootstrap-4.5.0-dist/js/javascriptsistema.js"></script>
     </body>
 </html>

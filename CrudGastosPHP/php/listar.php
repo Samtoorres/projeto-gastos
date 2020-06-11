@@ -1,11 +1,11 @@
 <?php
 
-$nome_servidor = "localhost";
-$nome_usuario = "root";
-$senha = "";
-$nome_banco = "phpprojetov2";
+$host_name = "sql10.freesqldatabase.com";
+$db_usuario = "sql10347628";
+$db_senha = "WakNl2MEWT";
+$db_name = "sql10347628";
 
-$conectar = new mysqli($nome_servidor, $nome_usuario, $senha,$nome_banco);
+$conectar = mysqli_connect($host_name,$db_usuario,$db_senha,$db_name);
 $buscar = mysqli_query($conectar,"SELECT * FROM gastos")or die(mysql_error);
 
 $conectar->close();
@@ -48,7 +48,7 @@ $conectar->close();
                         
                         </tbody>
                         </table>
-                        <a href="../projeto/acesso.html"><button type="button" class="btn btn-lg btn-danger btn-block" value="Cancelar" onclick="redirecionamento();">Voltar</button></a>
+                        <a href="../acesso.html"><button type="button" class="btn btn-lg btn-danger btn-block" value="Cancelar" onclick="redirecionamento();">Voltar</button></a>
                     </form>
 	            </div>
             </div>

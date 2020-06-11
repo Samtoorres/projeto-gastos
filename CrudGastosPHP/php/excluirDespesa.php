@@ -2,13 +2,12 @@
 
     $id = $_POST['iD'];
 
-    $nome_servidor = "localhost";
-    $nome_usuario = "root";
-    $senha = "";
-    $banco = "phpprojetov2";
-
-    // Criar conexão
-    $conecta = new mysqli($nome_servidor, $nome_usuario, $senha, $banco);
+    $host_name = "sql10.freesqldatabase.com";
+    $db_usuario = "sql10347628";
+    $db_senha = "WakNl2MEWT";
+    $db_name = "sql10347628";
+    
+    $conecta = mysqli_connect($host_name,$db_usuario,$db_senha,$db_name);
     
     // apagar registro
     $sql = "DELETE FROM gastos WHERE id ='$id'";
@@ -17,14 +16,14 @@
     if (mysqli_affected_rows($conecta)) {
         echo "<script>
             alert('Contato excluído com sucesso!');
-            window.location.href = '../projeto/acesso.html';   
+            window.location.href = '../acesso.html';   
         </script>";
     } 
     else {
         echo  
             "<script>
                 alert('Erro ao excluir Contato. Id não encontrado.');
-                window.location.href = '../projeto/excluirContato.html';
+                window.location.href = '../excluirContato.html';
             </script>";
     }
     

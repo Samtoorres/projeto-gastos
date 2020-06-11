@@ -3,13 +3,12 @@
 $email = $_GET['usuario'];
 $senhas = $_GET['senha'];
 
-$nome_servidor = "localhost";
-$nome_usuario = "root";
-$senha = "";
-$nome_banco = "phpprojetov2";
+$host_name = "sql10.freesqldatabase.com";
+$db_usuario = "sql10347628";
+$db_senha = "WakNl2MEWT";
+$db_name = "sql10347628";
 
-// Criar conexão
-$conn = new mysqli($nome_servidor, $nome_usuario, $senha,$nome_banco);
+$conn = mysqli_connect($host_name,$db_usuario,$db_senha,$db_name);
 
 
     $tenta_achar = "SELECT * FROM usuario WHERE email='$email' AND senha='$senhas'" ;
