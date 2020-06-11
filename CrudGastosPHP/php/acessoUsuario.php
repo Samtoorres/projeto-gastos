@@ -17,14 +17,14 @@
     if ($resultado->num_rows > 0) {
         $_SESSION['email'] = $usuario;
         $_SESSION['senha'] = $senha;
-        header('location:acesso.html');//redireciona para a página de acesso
+        header('location:../projeto/acesso.html');//redireciona para a página de acesso
     }
     else{
         session_unset();//remove todas as variáveis de sessão
         session_destroy();//destroi a sessão
         echo "<script> 
                 alert('Login ou senha incorreto');
-                window.location.href = 'index.html';
+                window.location.href = '../projeto/index.html';
             </script>";
       }
     

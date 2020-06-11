@@ -42,19 +42,19 @@ $conectar->close();
                                 <tr>
                                     <td><?php echo $dado["id"] ?></td>
                                     <td><?php echo $dado["nome"] ?></td>
-                                    <td><?php echo $dado["valor"] ?></td>
+                                    <td><?php echo "R$ ".$dado["valor"] ?></td>
                                 </tr>
                                 <?php }?>
                         
                         </tbody>
                         </table>
-                        <a href="acesso.html"><button type="button" class="btn btn-lg btn-danger btn-block" value="Cancelar" onclick="redirecionamento();">Voltar</button></a>
+                        <a href="../projeto/acesso.html"><button type="button" class="btn btn-lg btn-danger btn-block" value="Cancelar" onclick="redirecionamento();">Voltar</button></a>
                     </form>
 	            </div>
             </div>
         </div>
-        <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
-        <script src="bootstrap/js/javascriptsistema.js"></script>
+        <script src="../bootstrap/js/javascriptsistema.js"></script>
     </body>
 </html>

@@ -17,14 +17,14 @@
     if (mysqli_affected_rows($conecta)) {
         echo "<script>
             alert('Contato excluído com sucesso!');
-            window.location.href = 'acesso.html';   
+            window.location.href = '../projeto/acesso.html';   
         </script>";
     } 
     else {
         echo  
             "<script>
                 alert('Erro ao excluir Contato. Id não encontrado.');
-                window.location.href = 'excluirContato.html';
+                window.location.href = '../projeto/excluirContato.html';
             </script>";
     }
     

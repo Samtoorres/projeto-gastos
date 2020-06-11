@@ -18,7 +18,7 @@
   if ($conecta->query($sql) === TRUE) {
       echo "<script>
               alert('cadastrado com sucesso');
-              window.location.href = 'index.html';
+              window.location.href = '../index.html';
             </script>";
           
   } else {

@@ -20,13 +20,13 @@ if (mysqli_num_rows($sql) > 0) {
     if ($conecta->query($sql) === TRUE) {
         echo "<script> 
                 alert('Dados atualizados com sucesso!');
-                window.location.href = 'acesso.html';
+                window.location.href = '../projeto/acesso.html';
             </script>";
     }
 } else {
     echo "<script> 
                 alert('Erro na atualização do contato. Id não encontrado.');
-                window.location.href = 'atualizaDados.html';
+                window.location.href = '../projeto/atualizaDados.html';
             </script>" . $conecta->error;
 }
 
