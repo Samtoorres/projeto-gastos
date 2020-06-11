@@ -3,6 +3,7 @@ body{
     background-image: url(../img/imagemGatos.PNG);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .wrapper{
@@ -104,4 +105,3 @@ td{
 
 }
 
-    
