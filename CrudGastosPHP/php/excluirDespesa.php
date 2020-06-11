@@ -23,7 +23,7 @@
         echo  
             "<script>
                 alert('Erro ao excluir Contato. Id não encontrado.');
-                window.location.href = '../excluirContato.html';
+                window.location.href = '../excluirDespesa.html';
             </script>";
     }
     
