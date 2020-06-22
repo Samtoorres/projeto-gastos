@@ -2,10 +2,10 @@
 
     $id = $_POST['iD'];
 
-    $host_name = "sql10.freesqldatabase.com";
-    $db_usuario = "sql10347628";
-    $db_senha = "WakNl2MEWT";
-    $db_name = "sql10347628";
+    $host_name = "sql308.epizy.com";
+    $db_usuario = "epiz_25992695";
+    $db_senha = "rY3hjG5EKuP";
+    $db_name = "epiz_25992695_phpgasto";
     
     $conecta = mysqli_connect($host_name,$db_usuario,$db_senha,$db_name);
     
