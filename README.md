@@ -1,4 +1,4 @@
-# Projeto PHP Gastos
+# Projeto PHP Gastoss
 # Alunos: 
 # Samuel Torres Vieira - 201919083
 #         Abelardo Siqueira Neto - 201919885
